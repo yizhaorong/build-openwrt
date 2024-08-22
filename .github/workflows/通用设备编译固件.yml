@@ -17,6 +17,7 @@ on:
         options:
           - openwrt-main
           - lede-master
+          - immortalwrtARM-mt7622
           - immortalwrt-master
           - Lienol-master
       
@@ -73,6 +74,10 @@ jobs:
               REPO_URL="https://github.com/coolsnowwolf/lede"
               REPO_BRANCH="master"
               TAGS_NAME="lede"
+          elif [[ "${{ inputs.source_branch }}" == *"immortalwrtARM"* ]]; then
+              REPO_URL="https://github.com/yizhaorong/immortalwrtARM"
+              REPO_BRANCH="mt7622"
+              TAGS_NAME="immortalwrtARM"
           elif [[ "${{ inputs.source_branch }}" == *"immortalwrt"* ]]; then
               REPO_URL="https://github.com/immortalwrt/immortalwrt"
               REPO_BRANCH="master"
