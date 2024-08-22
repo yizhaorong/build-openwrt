@@ -23,7 +23,10 @@ echo "DISTRIB_SOURCECODE='official'" >>package/base-files/files/etc/openwrt_rele
 # ------------------------------- Other started -------------------------------
 #
 # Add luci-app-amlogic
-git clone https://github.com/ophub/luci-app-amlogic package/luci-app-amlogic
+# git clone https://github.com/ophub/luci-app-amlogic package/luci-app-amlogic
+
+# Add luci-app-openclash
+git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
 
 # coolsnowwolf default software package replaced with Lienol related software package
 # rm -rf feeds/packages/utils/{containerd,libnetwork,runc,tini}
