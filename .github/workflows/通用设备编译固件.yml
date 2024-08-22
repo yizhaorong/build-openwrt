@@ -17,7 +17,7 @@ on:
         options:
           - openwrt-main
           - lede-master
-          - immortalwrtARM-mt7622
+          - immortalwrtARM
           - immortalwrt-master
           - Lienol-master
       
